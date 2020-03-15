@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6c764ab0c9df49f034702422f195731f",
+    "revision": "a83e767fd30454c0d1f538d4ef8a6e4e",
     "url": "/kebab-case-converter/index.html"
   },
   {
-    "revision": "1bd615dba0c7acaf38c7",
+    "revision": "50e104c9296e32b228d2",
     "url": "/kebab-case-converter/static/css/main.8f059297.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kebab-case-converter/static/js/2.8c619dc6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bd615dba0c7acaf38c7",
-    "url": "/kebab-case-converter/static/js/main.619df2ab.chunk.js"
+    "revision": "50e104c9296e32b228d2",
+    "url": "/kebab-case-converter/static/js/main.ac9cb8b6.chunk.js"
   },
   {
     "revision": "b94f04fc7e82f48e2df5",
