@@ -6,37 +6,30 @@ function App() {
   const [output, setOutput] = useState("");
 
   const convertToSnakeCase = val => {
-    console.log(val);
-    
-    setOutput('');
+    setOutput("");
     if (!val) return;
-    // val = val.replace(/[.*+?^${}()|[\]\=\-\\:/]/g, '{#}');
-    // val = val.replace(/[.*+?^${}()|[\]|(: )\=\-\\:/]/g, '{#}');
-    val = val.replace(/[.*+?^${}()|[\]|(: )'\"\=\-\\:/]/g, "{#}");
+
+    const specialCharsRegex = /[!@.*+?^${}()|[\]|(: )'"=\-\\:/]/g;
+    const endingSpecialCharsRegex = /[!@#$%^&*(),.?"':{}|<>]+$/g;
+    val = val.replace(endingSpecialCharsRegex, "");
+    val = val.replace(specialCharsRegex, "{#}");
     val = val.replace(/({#})+/g, "-");
-    const orginal = val.toLowerCase().replace(/ /g, "-");
-    const _output = `${orginal[0].toUpperCase()}${orginal.slice(1)}`;
-    setOutput(_output);
+    const kebabCase = val.toLowerCase().replace(/ /g, "-");
+    const titleCase = `${kebabCase[0].toUpperCase()}${kebabCase.slice(1)}`;
+    setOutput(titleCase);
+    // Alert !the @@@copied""fsf" text@@@@
   };
 
   const copy = () => {
-    /* Get the text field */
     const copyText = document.getElementById("output");
-
-    /* Select the text field */
     copyText.select();
-
-    /* Copy the text inside the text field */
     document.execCommand("copy");
-
-    /* Alert the copied text */
-    // alert("Copied the text: " + copyText.value);
   };
+
   const paste = () => {
     navigator.clipboard
       .readText()
       .then(text => {
-        // this.inputText.setValue(text);
         setInputtext(text);
       })
       .catch(err => {
@@ -45,8 +38,8 @@ function App() {
   };
 
   const clear = () => {
-    setInputtext('');
-    setOutput('');
+    setInputtext("");
+    setOutput("");
   };
 
   return (
