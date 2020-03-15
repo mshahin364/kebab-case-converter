@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 
 function App() {
   const [inputText, setInputtext] = useState("");
   const [output, setOutput] = useState("");
+  const outputRef = useRef(null);
 
   const convertToSnakeCase = val => {
     setOutput("");    
@@ -24,7 +25,7 @@ function App() {
   }
 
   const copy = () => {
-    const copyText = document.getElementById("output");
+    const copyText = outputRef.current;
     copyText.select();
     document.execCommand("copy");
   };
@@ -89,6 +90,7 @@ function App() {
             id="output"
             className="output"
             value={output}
+            ref={outputRef}
             readOnly
           />
         </div>
