@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kebab-case-converter/static/css/main.8f059297.chunk.css",
-    "main.js": "/kebab-case-converter/static/js/main.ac9cb8b6.chunk.js",
-    "main.js.map": "/kebab-case-converter/static/js/main.ac9cb8b6.chunk.js.map",
+    "main.js": "/kebab-case-converter/static/js/main.87ee4d56.chunk.js",
+    "main.js.map": "/kebab-case-converter/static/js/main.87ee4d56.chunk.js.map",
     "runtime-main.js": "/kebab-case-converter/static/js/runtime-main.c2e958ae.js",
     "runtime-main.js.map": "/kebab-case-converter/static/js/runtime-main.c2e958ae.js.map",
     "static/js/2.8c619dc6.chunk.js": "/kebab-case-converter/static/js/2.8c619dc6.chunk.js",
     "static/js/2.8c619dc6.chunk.js.map": "/kebab-case-converter/static/js/2.8c619dc6.chunk.js.map",
     "index.html": "/kebab-case-converter/index.html",
-    "precache-manifest.86af44b243470737cd99fe5934fa2449.js": "/kebab-case-converter/precache-manifest.86af44b243470737cd99fe5934fa2449.js",
+    "precache-manifest.8b9e7a439824c773674a583747f5de44.js": "/kebab-case-converter/precache-manifest.8b9e7a439824c773674a583747f5de44.js",
     "service-worker.js": "/kebab-case-converter/service-worker.js",
     "static/css/main.8f059297.chunk.css.map": "/kebab-case-converter/static/css/main.8f059297.chunk.css.map",
     "static/js/2.8c619dc6.chunk.js.LICENSE.txt": "/kebab-case-converter/static/js/2.8c619dc6.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c2e958ae.js",
     "static/js/2.8c619dc6.chunk.js",
     "static/css/main.8f059297.chunk.css",
-    "static/js/main.ac9cb8b6.chunk.js"
+    "static/js/main.87ee4d56.chunk.js"
   ]
 }
