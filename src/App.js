@@ -6,7 +6,7 @@ function App() {
   const [output, setOutput] = useState("");
 
   const convertToSnakeCase = val => {
-    setOutput("");
+    setOutput("");    
     if (!val) return;
 
     const specialCharsRegex = /[!@.*+?^${}()|[\]|(: )'"=\-\\:/]/g;
@@ -20,10 +20,8 @@ function App() {
 
     const kebabCase = val.toLowerCase().replace(/ /g, "-");
     const titleCase = `${kebabCase[0].toUpperCase()}${kebabCase.slice(1)}`;
-    setOutput(titleCase);
-    // Alert !the @@@copied""fsf" text@@@@ Alert !the @@@co-pied""fsf" text@@@@ fffsf....#aaa (fsf) {fsdfds}...!@+
-    // Converts spaces to hyphens (-) and remove all special characters... father's fsfrw rewr @$$
-  };
+    setOutput(titleCase);    
+  }
 
   const copy = () => {
     const copyText = document.getElementById("output");
