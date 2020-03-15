@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kebab-case-converter/static/css/main.5f361e03.chunk.css",
+    "main.js": "/kebab-case-converter/static/js/main.682a2680.chunk.js",
+    "main.js.map": "/kebab-case-converter/static/js/main.682a2680.chunk.js.map",
+    "runtime-main.js": "/kebab-case-converter/static/js/runtime-main.c2e958ae.js",
+    "runtime-main.js.map": "/kebab-case-converter/static/js/runtime-main.c2e958ae.js.map",
+    "static/js/2.67cb36ce.chunk.js": "/kebab-case-converter/static/js/2.67cb36ce.chunk.js",
+    "static/js/2.67cb36ce.chunk.js.map": "/kebab-case-converter/static/js/2.67cb36ce.chunk.js.map",
+    "index.html": "/kebab-case-converter/index.html",
+    "precache-manifest.0899e1babbc00998a15ec90d09aec858.js": "/kebab-case-converter/precache-manifest.0899e1babbc00998a15ec90d09aec858.js",
+    "service-worker.js": "/kebab-case-converter/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/kebab-case-converter/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.67cb36ce.chunk.js.LICENSE.txt": "/kebab-case-converter/static/js/2.67cb36ce.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/kebab-case-converter/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2e958ae.js",
+    "static/js/2.67cb36ce.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.682a2680.chunk.js"
+  ]
+}
