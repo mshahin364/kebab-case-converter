@@ -10,14 +10,19 @@ function App() {
     if (!val) return;
 
     const specialCharsRegex = /[!@.*+?^${}()|[\]|(: )'"=\-\\:/]/g;
-    const endingSpecialCharsRegex = /[!@#$%^&*(),.?"':{}|<>]+$/g;
-    val = val.replace(endingSpecialCharsRegex, "");
+    const endingSpecialCharsRegex = /[!@#$%^&*(),.?"':{}|<>\s]+$/g;
+    const middleSpecialCharsRegex = /[!@#$%^&*(),.?"':{}|<>+]/g;
+    
+    val = val.replace(middleSpecialCharsRegex, "");
+    val = val.replace(endingSpecialCharsRegex, "");   
     val = val.replace(specialCharsRegex, "{#}");
     val = val.replace(/({#})+/g, "-");
+
     const kebabCase = val.toLowerCase().replace(/ /g, "-");
     const titleCase = `${kebabCase[0].toUpperCase()}${kebabCase.slice(1)}`;
     setOutput(titleCase);
-    // Alert !the @@@copied""fsf" text@@@@
+    // Alert !the @@@copied""fsf" text@@@@ Alert !the @@@co-pied""fsf" text@@@@ fffsf....#aaa (fsf) {fsdfds}...!@+
+    // Converts spaces to hyphens (-) and remove all special characters... father's fsfrw rewr @$$
   };
 
   const copy = () => {
