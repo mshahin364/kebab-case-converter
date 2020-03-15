@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kebab-case-converter/precache-manifest.a382fa4dcda0a7ec613e138f2803a4f6.js"
+  "/kebab-case-converter/precache-manifest.f6c3a21cf2ba5bdc06fb31fa79246ad6.js"
 );
 
 self.addEventListener('message', (event) => {
