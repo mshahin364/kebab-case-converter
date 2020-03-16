@@ -1,7 +1,8 @@
 .input, .output {
   width: 98%;
   height: 2em;
-  margin: 1em;
+  /* margin: 1em; */
+  margin: 1rem auto;
 }
 
 .container {
@@ -9,9 +10,25 @@
   padding: 1em;
   margin-top: 5em;
   width: 100%;
+  position: relative;
 }
 
 .btn-size {
   width: 8em;
   padding: .3em;  
+}
+
+.author-container {  
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  width: 100%;
+}
+
+.author {
+  font-size: .9rem;
+  color: rgba(0, 0, 0, .5);
 }

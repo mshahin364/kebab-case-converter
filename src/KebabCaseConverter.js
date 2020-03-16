@@ -81,8 +81,7 @@ function KebabCaseConverter() {
       </div>
 
       <div style={{ paddingTop: "2em" }}>
-        Output: <br />
-        <br />
+        Converted Text: 
         <input
           type="text"
           id="output"
