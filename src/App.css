@@ -18,7 +18,7 @@
   padding: .3em;  
 }
 
-.author-container {  
+.author-container, .header {  
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -31,4 +31,20 @@
 .author {
   font-size: .9rem;
   color: rgba(0, 0, 0, .5);
+  padding-right: 5px;
+}
+
+.header {
+  bottom: unset;  
+  top: 0;
+  padding-right: 5px;
+}
+
+.github-link a {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.github-link a:hover {
+  color: blue;
 }
