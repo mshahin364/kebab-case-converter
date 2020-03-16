@@ -5,7 +5,7 @@ function KebabCaseConverter() {
   const [output, setOutput] = useState("");
   const outputRef = useRef(null);
 
-  const convertToSnakeCase = val => {
+  const convertToKebabCase = val => {
     setOutput("");
     if (!val) return;
 
@@ -64,7 +64,7 @@ function KebabCaseConverter() {
 
       <div className="d-flex">
         <button
-          onClick={() => convertToSnakeCase(inputText)}
+          onClick={() => convertToKebabCase(inputText)}
           className="btn-size btn-primary"
         >
           Convert
